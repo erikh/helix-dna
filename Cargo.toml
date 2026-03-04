@@ -11,6 +11,7 @@ resolver = "2"
 edition = "2024"
 version = "0.1.0"
 license = "AGPL-3.0-only"
+repository = "https://github.com/erikh/helix-dna"
 
 [workspace.dependencies]
 blake3 = "1"
