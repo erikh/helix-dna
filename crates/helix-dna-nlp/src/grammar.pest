@@ -1,0 +1,11 @@
+WHITESPACE = _{ " " | "\t" }
+
+command = { SOI ~ verb ~ argument+ ~ EOI }
+
+verb = { ASCII_ALPHA+ }
+
+argument = { number | word }
+
+number = @{ ASCII_DIGIT+ }
+
+word = @{ ASCII_ALPHA+ }

@@ -1,0 +1,13 @@
+[package]
+name = "helix-dna-wasm"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+helix-dna-core = { workspace = true }
+wasm-encoder = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+wasmparser = { workspace = true }

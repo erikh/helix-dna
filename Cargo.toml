@@ -1,0 +1,29 @@
+[workspace]
+members = [
+    "crates/helix-dna-core",
+    "crates/helix-dna-nlp",
+    "crates/helix-dna-wasm",
+    "crates/helix-dna",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+license = "AGPL-3.0-only"
+
+[workspace.dependencies]
+blake3 = "1"
+petgraph = "0.7"
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+pest = "2"
+pest_derive = "2"
+wasm-encoder = "0.225"
+wasmtime = "30"
+wasmparser = "0.225"
+proptest = "1"
+
+helix-dna-core = { path = "crates/helix-dna-core" }
+helix-dna-nlp = { path = "crates/helix-dna-nlp" }
+helix-dna-wasm = { path = "crates/helix-dna-wasm" }

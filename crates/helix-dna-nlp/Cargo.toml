@@ -1,0 +1,11 @@
+[package]
+name = "helix-dna-nlp"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+helix-dna-core = { workspace = true }
+pest = { workspace = true }
+pest_derive = { workspace = true }
+thiserror = { workspace = true }
